@@ -1,0 +1,106 @@
+/* colors */
+$dark: #131313;
+$dark-btn: #2A2925;
+$grey: #4E4E4E;
+$blue: #3B93FF/* #0072FF */;
+$main-light: #B9B9B9;
+$red: #E31E25;
+$red-light: #EE495C;
+
+
+$bg-light: #F6F6F6;
+$gradient: linear-gradient(223.22deg, #3B93FF 15.44%, #0072FF 84.9%);
+$col-0072FF: linear-gradient(180deg, #0072FF 0%, #3992FF 100%);
+
+/* font-weight */
+$fw-medium: 500;
+$fw-light: 300;
+
+/* typografy */
+
+$font-title: 'Bebas Neue';
+
+@mixin h1 {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 54px;
+}
+@mixin h2 {
+    font-family: 'Bebas Neue';
+    font-size: 42px;
+}
+@mixin h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+@mixin desc {
+    font-size: 12px;
+    line-height: 16px;
+}
+@mixin big-btn {
+    font-weight: bold;
+    font-size: 14px;
+}
+@mixin small-btn {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* bg decor elements */
+
+@mixin decor {
+    display: block;
+    content: '';
+    position: absolute;
+}
+@mixin decor-1 {
+    display: block;
+    content: '';
+    width: 187px;
+    height: 187px;
+    background: url(../images/project/decor-ball.png) top center no-repeat;
+    position: absolute;
+}
+@mixin decor-2 {
+    display: block;
+    content: '';
+    width: 28px;
+    height: 79px;
+    background: url(../images/project/decor-2.png) top center no-repeat;
+    position: absolute;
+}
+@mixin decor-3 {
+    display: block;
+    content: '';
+    width: 135px;
+    height: 273px;
+    background: url(../images/project/decor-3.png) top center no-repeat;
+    position: absolute;
+}
+@mixin decor-4 {
+    display: block;
+    content: '';
+    width: 13px;
+    height: 51px;
+    background: url(../images/project/decor-4.png) top center no-repeat;
+    position: absolute;
+}
+@mixin arrow-more {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 8px;
+    background: url(../images/icons/arrow-review.svg);
+    position: absolute;
+    top: 6px;
+    right: -40px;
+}
+
+
+
+
+
+
+
+

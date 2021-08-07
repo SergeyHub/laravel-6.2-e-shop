@@ -1,0 +1,282 @@
+/*==================================================================================================================
+                                        POPUPS
+==================================================================================================================*/
+.modal-dialog {
+    margin: 70px auto;
+    width: calc(100% - 30px);
+    @include media-breakpoint-down(xs) {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.modal-lg {
+    @media (min-width: 768px) {
+        max-width: 690px;
+    }
+    @media (min-width: 992px) {
+        max-width: 800px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1028px;
+    }
+}
+.modal-xl {
+    @media (min-width: 768px) {
+        max-width: 690px;
+    }
+    @media (min-width: 992px) {
+        max-width: 800px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+}
+.modal-content {
+    background: transparent;
+    border: none;
+}
+.close {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 22px;
+    right: 18px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 1;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.modal-header {
+    border: none;
+    padding: 0;
+    &__icon {
+        margin: 0 auto;
+        width: 95px;
+        height: 95px;
+        position: relative;
+        z-index: 2;
+    }
+}
+.modal-body {
+    background: #fff;
+    box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 80px 30px 53px;
+    text-align: center;
+    margin-top: -48px;
+   .main-title {
+        margin-bottom: 9px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__btns {
+        margin-top: 44px;
+    }
+    .btn-light {
+        color: $black !important;
+        &:hover {
+            color: #fff !important;
+        }
+    }
+}
+
+/*==================================================================================================================
+                                        city-list
+==================================================================================================================*/
+.city-list-pop {
+    .close {
+        top: 15px;
+        right: 15px;
+    }
+    .modal-content {
+        background: #fff;
+    }
+    .main-title {
+        margin-bottom: 38px;
+        margin-top: 30px;
+    }
+    .modal-body {
+        padding: 42px  0 50px;
+        @include media-breakpoint-down(sm) {
+            padding-top: 30px;
+        }
+    }
+    .form-group {
+        margin-bottom: 70px;
+        .form-label {
+            padding-left: 28px;
+        }
+    }
+    .search {
+        max-width: 430px;
+        &-icon {
+            left: auto;
+            right: 22px;
+            svg path {
+                fill: $red;
+            }
+        }
+    }
+    .card_name {
+        @include h3;
+        color: $black !important;
+    }
+    .city-list {
+        text-align: left;
+        .card a {
+            color: $red;
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        padding-right: 0 !important;
+        .modal-dialog {
+            margin-top: 48px;
+        }
+        .modal-body {
+            border-radius: 0;
+        }
+        .search {
+            padding: 0 15px;
+        }
+    }
+}
+.city-list {
+    padding-left: 42px;
+    column-count: 6;
+    column-gap: 30px;
+    .card {
+        padding-bottom: 30px;
+        display: inline-block;
+        width: 100%;
+        border: none;
+        font-weight: 300;
+        font-size: 15px;
+        .card_name {
+            font-weight: 500;
+            font-size: 18px;
+            color: $red;
+        }
+        p {
+            margin-bottom: 4px;
+        }
+        a {
+            color: #364862;
+            text-decoration: none;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        column-count: 5;
+        column-gap: 20px;
+    }
+    @include media-breakpoint-down(md) {
+        column-count: 4;
+    }
+    @include media-breakpoint-down(sm) {
+        column-count: 3;
+        padding-left: 20px;
+    }
+    @media (max-width: 425px) {
+        column-count: 2;
+    }
+}
+/*==================================================================================================================
+                                       callback-pop
+==================================================================================================================*/
+.callback-pop {
+    .modal-body {
+        padding: 65px 65px 34px;
+    }
+    .modal-header__icon {
+        svg {
+            width: 32px;
+            height: auto;
+        }
+    }
+    .modal-body__text {
+        margin-bottom: 26px;
+    }
+    .modal-body__btns {
+        margin-top: 22px;
+    }
+    .btn {
+        padding-left: 0;
+        padding-right: 0;
+        width: 248px;
+    }
+    @include media-breakpoint-down(xs) {
+        .modal-dialog {
+            margin-top: 30px;
+        }
+        .modal-body {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .modal-form {
+            .btn, .form-control {
+                width: 280px;
+            }
+        }
+    }
+}
+/*==================================================================================================================
+                                        confirm-pop
+==================================================================================================================*/
+
+#confirm-pop {
+    .btn {
+        padding-left: 0;
+        padding-right: 0;
+        width: 282px;
+    }
+    .btn-light {
+        width: 380px;
+    }
+    @include media-breakpoint-down(sm) {
+        .btn {
+            width: 100%;
+            margin: 0 0 16px !important;
+        }
+    }
+}
+/*==================================================================================================================
+                                        thankfulness-pop
+==================================================================================================================*/
+.thankfulness-pop {
+    .modal-body {
+        padding: 50px 0 30px;
+        .text {
+            max-width: 80%;
+            font-size: 22px;
+            line-height: 1.4;
+            font-weight: $fw-medium;
+            margin-bottom: 30px;
+            span {
+                font-weight: bold;
+            }
+        }
+        @include media-breakpoint-down(xs) {
+            padding: 24px 0 30px;
+            .text {
+                max-width: 100%;
+                font-size: 20px;
+                margin-bottom: 20px;
+                padding: 0 15px;
+            }
+        }
+    }
+}

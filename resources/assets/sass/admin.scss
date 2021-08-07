@@ -1,0 +1,89 @@
+.field-order {
+  width: 55px !important;
+  padding: 0 3px;
+  height: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.image-hidden img {
+  background: #8c8c8c
+}
+
+.image-hidden img {
+  -webkit-filter: contrast(10%);
+  filter: contrast(10%)
+}
+
+/* --------------- IMPROVED IMAGES SORTING --------------------- */
+
+.form-element-files {
+  position: relative;
+}
+
+.form-element-files::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.form-element-files__item {
+  display: block;
+  float: left;
+}
+.form-element-files__item a.form-element-files__image {
+
+}
+
+.form-element-files__item._isDragged {
+  cursor: move;
+  position: absolute;
+  float: none;
+  z-index: 10;
+}
+
+.form-element-files__placeholder {
+  width: 206px;
+  height: 250px;
+  display: block;
+  list-style: none;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px dotted #ccc;
+  background: #fff;
+  margin: 0 20px 20px 0;
+}
+
+/*---------------- MULTISELECT TABLED ----------------*/
+.multiselect-tabled
+{
+  .field_value
+  {
+    width: 200px;
+    text-align: center;
+  }
+
+  .field_id
+  {
+    width: 10px;
+  }
+
+  .btn-select
+  {
+    background: #EEE;
+    &.active
+    {
+      background: #0062cc;
+      color:#EEE;
+    }
+  }
+
+  .hide
+  {
+    display: none;
+  }
+}
+
+
+/*---------------- END MULTISELECT TABLED ----------------*/

@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "_vars";
+
+@import "_shared";
+@import "_main";
+@import "_catalog";
+@import "_product";
+@import "_delivery";
+@import "_cart";
+@import "_success";
+@import "_article";
+@import "_popups";
+
+
+
+
+.map-wrapper ymaps,
+.map-wrapper iframe {
+    width: 100% !important;
+    min-height: 488px;
+}
+@include media-breakpoint-down(sm) {
+    #confirm-pop {
+        padding: 0 !important;
+    }
+}
+
+.where__item__image-mobile {
+    display: none;
+}
+.where__item__image-desctop {
+    display: block;
+}
+@media(max-width: 300px) {
+    .where__item__image-mobile {
+        display: block;
+    }
+    .where__item__image-desctop {
+        display: none;
+    }
+}
+
+svg{
+    transition: .3s;
+    path{
+        transition: .3s;
+    }
+}
+
+.btn-under-order-card:not([href]),
+.btn-under-order-teaser:not([href])
+{
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn-under-order-card:not([href]):hover,
+.btn-under-order-teaser:not([href]):hover
+{
+    color: $red;
+}

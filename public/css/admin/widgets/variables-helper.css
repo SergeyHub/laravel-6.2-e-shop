@@ -1,0 +1,97 @@
+.variables-help {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    padding: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-left: #222d32 4px solid;
+    z-index: 160;
+    width: 30%;
+    transition: all 0.3s ease-out;
+}
+
+.variables-help .card {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 100%;
+    z-index: 6;
+}
+
+.variables-help.expanded {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+}
+
+.variables-help .var-name {
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.variables-help .var-name:hover {
+    color: #3c8dbc
+}
+
+.variables-help a.shortcut {
+    display: block;
+    position: absolute;
+    left: -26px;
+    bottom: 100px;
+    width: 26px;
+    text-align: center;
+    padding: 4px;
+    background: #222d32;
+    color: #b8c7ce;
+    border-radius: 10px 0px 0px 10px;
+    font-weight: bold;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.variables-help a.shortcut span {
+    display: block;
+    position: relative;
+    transform: rotate(-90deg);
+    height: 200px;
+    width: 200px;
+    white-space: nowrap;
+    z-index: -1;
+}
+
+/* -------------------- COPY VARIABLE ------------------------*/
+*[data-toggle=copy] {
+    cursor: pointer;
+    position: relative;
+}
+
+*[data-toggle=copy]::after {
+    position: absolute;
+    opacity: 0;
+    z-index: -100;
+    background: #FFF;
+    box-shadow: #666 0px 0px 2px;
+    border-radius: 0.25em;
+    top: -20px;
+    color: #333;
+    padding: 2px;
+    transition: opacity 0.6s ease;
+}
+
+/*    *[data-toggle=copy]:hover::after
+    {
+        opacity: 1;
+        z-index: 100;
+        content: "Копировать";
+    }*/
+
+*[data-toggle=copy]:active::after {
+    opacity: 1;
+    z-index: 100;
+    content: "Скопировано!";
+}

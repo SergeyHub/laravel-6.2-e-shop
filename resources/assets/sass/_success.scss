@@ -1,0 +1,181 @@
+/*==================================================================================================================
+                                        success page
+==================================================================================================================*/
+.success {
+    &-page {
+        padding-bottom: 64px;
+        background: url(../images/project/success-bg.jpg) top center no-repeat;
+        background-size: cover;
+
+        .main-title {
+            margin: 40px 0;
+        }
+        &__image {
+            bottom: -64px;
+            left: -305px;
+        }
+        .custom-height {
+            min-height: 560px;
+        }
+    }
+    &__info {
+        margin-top: 25px;
+        margin-bottom: 38px;
+        .icon {
+            width: 61px;
+            height: 61px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.05);
+            margin-right: 31px;
+            svg path {
+                fill: $red;
+            }
+        }
+        &__text {
+            p {
+                line-height: 1.62;
+                margin-bottom: 0;
+            }
+
+        }
+    }
+    &__confirm {
+        margin-top: 50px;
+        .icon {
+            width: 106px;
+            height: 106px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.05);
+            margin-right: 41px;
+            svg path {
+                fill: $red;
+            }
+        }
+        .title {
+            color: $dark;
+            margin-bottom: 20px;
+            .total {
+                font-weight: 300;
+                font-size: 42px;
+                margin-left: 21px;
+            }
+        }
+        .btn {
+            width: 248px;
+            margin-left: 147px;
+            margin-top: 30px;
+            text-shadow: none;
+            color: $dark !important;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+
+    }
+    @include media-breakpoint-down(lg) {
+        &-page {
+            &:before {
+                display: none;
+            }
+            &__image {
+               left: -130px;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &-page {
+            &__image {
+                max-width: 260px;
+            }
+            .main-title {
+                text-align: center;
+            }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        &-page {
+            padding-top: 44px;
+            padding-bottom: 50px;
+            .main-title {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .first-screen__image {
+                margin-left: -210px !important;
+                max-width: 460px;
+            }
+        }
+        &__info {
+            flex-wrap: wrap;
+            .icon {
+                margin: 0 auto 16px;
+            }
+            &__text {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &__confirm {
+            .icon {
+                margin: 0 auto 26px;
+            }
+            .text-wrapper {
+                width: 100%;
+                text-align: center;
+            }
+            .btn {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+/*==================================================================================================================
+                                        thankyou page
+==================================================================================================================*/
+.thankyou {
+    .main-title {
+        margin-top: 134px;
+    }
+    &__content {
+        margin-bottom: 154px;
+    }
+    &__btn {
+        margin-left: 92px;
+        width: 248px;
+        text-shadow: none;
+        color: $dark !important;
+        &:hover {
+            color: #fff !important;
+        }
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    .success-page__image {
+        left: -261px;
+    }
+    @include media-breakpoint-down (lg) {
+        .success-page__image {
+            left: -194px;
+        }
+    }
+    @include media-breakpoint-down (md) {
+        .main-title {
+            margin-top: 0;
+        }
+        &__content {
+            margin: 0 ;
+        }
+    }
+    @include media-breakpoint-down (xs) {
+        .first-screen__image {
+            margin-left: -230px !important;
+        }
+    }
+}
+

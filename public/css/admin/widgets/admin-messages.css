@@ -1,0 +1,55 @@
+@keyframes alertBlinkText {
+
+    50% {color: #ff8e8e;}
+
+}
+
+@keyframes alertBlinkBg {
+
+    50% {background-color: #ff8e8e;}
+
+}
+
+#messagesWidget .blink-text {
+    animation-name: alertBlinkText;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#messagesWidget .blink-bg {
+    animation-name: alertBlinkBg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#messagesModal h5
+{
+    color: #333;
+}
+
+#messagesWidget a
+{
+    cursor: pointer;
+}
+
+
+.message-box-icon
+{
+    float: left;
+    font-size: 4em;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    margin-right: 20px;
+}
+
+a.message-model, a.message-model:visited
+{
+    color: #333
+}
+
+
+

@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('BebasNeueBold.eot');
+	src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+	url('BebasNeueBold.woff') format('woff'),
+	url('BebasNeueBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('BebasNeueBook.eot');
+	src: url('BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+	url('BebasNeueBook.woff') format('woff'),
+	url('BebasNeueBook.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueLight.eot');
+    src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueLight.woff') format('woff'),
+    url('BebasNeueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    }

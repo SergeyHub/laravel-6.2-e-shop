@@ -1,0 +1,23 @@
+<template>
+    <div class="form-group filters__buttons">
+        <button class="btn btn-sm w-100 mb-3 filter-apply d-lg-none" v-on:click="$root.apply(true)">
+            Применить
+        </button>
+        <div :class="!$root.filters_active ? 'd-none' : ''" class="filter-drop__wrapper">
+            <button type="button" class="btn btn-sm btn-light w-100 filter-drop js-clear-btn" v-on:click="$root.clear()">
+                <span class="icon">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0C4.6311 0 0.990135 3.11333 0.172485 7.24218H2.67078C3.44055 4.46634 5.97904 2.42578 9 2.42578C10.816 2.42578 12.4571 3.16371 13.645 4.35498L10.7578 7.24218H18V0L15.3633 2.63671C13.7348 1.00772 11.4855 0 9 0ZM0 10.7578V18L2.63671 15.3633C4.26519 16.9923 6.51453 18 9 18C13.3689 18 17.0099 14.8867 17.8275 10.7578H15.3292C14.5595 13.5336 12.0209 15.5742 9 15.5742C7.18396 15.5742 5.54289 14.8363 4.35498 13.645L7.24218 10.7578H0Z" fill="#E31E25"/>
+                    </svg>
+                </span>
+                Сбросить
+            </button>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+
+    }
+</script>
